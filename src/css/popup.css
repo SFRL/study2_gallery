@@ -1,0 +1,78 @@
+.backdrop {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+}
+.popup {
+    display: flex;
+    margin: 1rem;
+    border: 5px solid black;
+    min-width: 80%;
+    min-height: 80%;
+    border-radius: 1rem;
+    background-color: rgb(245,245,245);
+    padding: 2rem;
+}
+
+.popup .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav > span {
+    padding: 0.5rem;
+    border-color: rgba(0,0,0,0);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.nav > span:hover {
+    cursor: pointer;
+    border-color: black;
+    box-shadow: 5px 5px #666;
+}
+
+.nav > span:active {
+    background-color: #666;
+    color: white;
+    box-shadow: 5px 5px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+  }
+
+/* Define a div inside the popup that centers all content*/
+div.center {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+div.center > .sketch {
+    background-color: white;
+    border: 3px solid black;
+    flex-grow: 1;
+    max-height: 80%;
+    max-width: 80%;
+}
+
+div.center svg {
+    width: 100%;
+    height: 100%;
+}
+
+div.center path {
+    stroke-width: 3px;
+}

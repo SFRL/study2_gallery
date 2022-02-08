@@ -1,0 +1,41 @@
+section.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.gallery {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+.sketch.gallery:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px #666;
+  position: relative;
+  top: -3px;
+  left: -3px;
+}
+
+div.gallery > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.marker {
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 90px;
+  line-height: 1;
+}
+
+.break-element {
+  width: 100%
+}
+
+
+
